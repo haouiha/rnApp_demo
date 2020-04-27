@@ -44,8 +44,8 @@ def flipper_post_install(installer)
   end
 end
 
-target 'safetysmartv2' do
-  # Pods for safetysmartv2
+target 'myApp' do
+  # Pods for myApp
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -79,7 +79,7 @@ target 'safetysmartv2' do
 
   pod 'react-native-sensitive-info', :path => '../node_modules/react-native-sensitive-info'
 
-  target 'safetysmartv2Tests' do
+  target 'myAppTests' do
     inherit! :complete
     # Pods for testing
   end
@@ -96,10 +96,10 @@ target 'safetysmartv2' do
   end
 end
 
-target 'safetysmartv2-tvOS' do
-  # Pods for safetysmartv2-tvOS
+target 'myApp-tvOS' do
+  # Pods for myApp-tvOS
 
-  target 'safetysmartv2-tvOSTests' do
+  target 'myApp-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
